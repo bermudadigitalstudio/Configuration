@@ -1,6 +1,6 @@
 import Foundation
 
-class Configuration {
+public class Configuration {
 
     public static func get(_ key: String, defaultValue: String) -> String {
         guard let value = ProcessInfo.processInfo.environment[key] else {
